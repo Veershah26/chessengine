@@ -24,4 +24,27 @@ enum { A1 = 21, B1, C1, D1, E1, F1, G1, H1,
 
 enum { FALSE, TRUE };
 
+typedef struct {
+
+    int pieces(BOARD_SQUARE_NUMBER);
+    U64 pawns[3];
+
+    int kingSquare[2];
+
+    int side;
+    int enPassant;
+    int fiftyMoves;
+
+    int ply;
+    int hisPly;
+
+    U64 positionKey;
+
+    int pieceNum[13];
+    int bigPiece[3];
+    int majPiece[3];
+    int minPiece[3];
+
+} S_BOARD;
+
 #endif
